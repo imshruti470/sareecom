@@ -1,0 +1,40 @@
+.filter-container {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .filter-section {
+    margin-bottom: 10px;
+  }
+  
+  .price-range {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .price-display {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .filter-options label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #4c51bf;
+  }
+  
