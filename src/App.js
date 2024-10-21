@@ -1,26 +1,20 @@
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import CardGridWithFilter from "./components/cardgrid";
+import Carousel from "./components/carousel";
+import Footer from "./components/footer";
+import Login from "./components/login";
+import Navbar from "./components/navbar";
 
-
-import Footer from "./components/Footer";
-import ContextProvider from "./class";
 
 function App() {
+ 
   return (
     <>
-    {/* <Router>
     <Navbar/>
-    <Routes>
-        <Route path="/" element={<Hero />} />
-       
-      </Routes>
-      <Footer/>
-    </Router> */}
-    
-    <ContextProvider/>
-    
+    <Carousel />
+    <CardGridWithFilter/>
+    <Footer/>
     </>
+
   );
 }
 
