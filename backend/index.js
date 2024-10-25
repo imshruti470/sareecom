@@ -1,14 +1,16 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const User = require('./models/User'); // Import User model
+const User = require('./user'); // Import User model
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = 'your_mongodb_connection_string'; // Replace with your MongoDB connection string
-const JWT_SECRET = 'your_jwt_secret'; // Replace with a strong secret for JWT
+const MONGO_URI = 'mongodb://localhost:27017'; // Replace with your MongoDB connection string
+const JWT_SECRET = process.env.JWT_SECRET;
+
 
 // Middleware
 app.use(cors());
